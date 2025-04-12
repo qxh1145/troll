@@ -9,9 +9,8 @@ body, html {
   overflow: hidden;
 }
 
-/* Nội dung thư */
 #letterContainer {
-  display: block; /* Hiển thị nội dung thư */
+  display: block; 
   position: absolute;
   top: 50%;
   left: 50%;
@@ -38,11 +37,10 @@ body, html {
   padding-right: 10px;
 }
 
-/* Mưa emoji tức giận và emoji phân */
 .heart {
   position: fixed;
-  font-size: 30px; /* Kích thước emoji */
-  color: red; /* Màu đỏ cho emoji tức giận */
+  font-size: 30px; 
+  color: red; 
   animation: fall 6s linear infinite;
   z-index: 9999;
 }
@@ -58,11 +56,10 @@ body, html {
   }
 }
 
-/* Mưa emoji phân */
 .emoji {
   position: fixed;
-  font-size: 30px; /* Kích thước emoji phân */
-  color: brown; /* Màu cho emoji phân */
+  font-size: 30px; 
+  color: brown; 
   animation: fall 6s linear infinite;
   z-index: 9999;
 }
@@ -78,19 +75,19 @@ body, html {
   }
 }
 
-/* Cập nhật mưa emoji tức giận */
+
 #heartBeat {
-  display: none; /* Xóa hiệu ứng trái tim đập */
+  display: none; 
 }
 @media (max-width: 768px) {
   body, html {
-      font-size: 16px; /* Giảm kích thước chữ cho các thiết bị nhỏ */
+      font-size: 16px; 
   }
 
   #letterContainer {
       width: 90%;
       height: 90%;
-      background-size: 100% 100%; /* Phủ ảnh nền đầy màn hình */
+      background-size: 100% 100%; 
   }
 
   #letterContent {
@@ -98,7 +95,7 @@ body, html {
       left: 5%;
       width: 90%;
       height: 80%;
-      font-size: 18px; /* Giảm kích thước font cho điện thoại */
+      font-size: 18px;
       line-height: 1.4;
   }
 
