@@ -82,3 +82,25 @@ body, html {
 #heartBeat {
   display: none; /* Xóa hiệu ứng trái tim đập */
 }
+@media (max-width: 768px) {
+  body, html {
+      font-size: 16px; /* Giảm kích thước chữ cho các thiết bị nhỏ */
+  }
+
+  #letterContainer {
+      width: 90%;
+      height: 90%;
+      background-size: 100% 100%; /* Phủ ảnh nền đầy màn hình */
+  }
+
+  #letterContent {
+      top: 10%;
+      left: 5%;
+      width: 90%;
+      height: 80%;
+      font-size: 18px; /* Giảm kích thước font cho điện thoại */
+      line-height: 1.4;
+  }
+
+
+}
