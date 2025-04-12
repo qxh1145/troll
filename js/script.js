@@ -6,7 +6,6 @@ const letterContainer = document.getElementById("letterContainer");
 const typedText = document.getElementById("typedText");
 const music = document.getElementById("bg-music"); // Lấy thẻ audio
 
-// Thêm sự kiện click để phát nhạc khi người dùng bấm vào trang
 document.body.addEventListener("click", () => {
     if (music) {
         music.volume = 1;  // Đặt âm lượng ở mức 100%
@@ -14,7 +13,6 @@ document.body.addEventListener("click", () => {
     }
 });
 
-// Bắt đầu hiệu ứng gõ chữ và mưa emoji tức giận và emoji phân
 typeText(text);
 startEmojiRain();
 
@@ -37,10 +35,9 @@ function startEmojiRain() {
         document.body.appendChild(emoji);
         setTimeout(() => emoji.remove(), 6000);
 
-        // Thêm emoji phân vào mưa emoji
         const poopEmoji = document.createElement("div");
         poopEmoji.classList.add("emoji");
-        poopEmoji.textContent = "💩";  // Thêm emoji phân
+        poopEmoji.textContent = "💩";  
         poopEmoji.style.left = Math.random() * 100 + "vw";
         document.body.appendChild(poopEmoji);
         setTimeout(() => poopEmoji.remove(), 6000);
