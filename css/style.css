@@ -1,0 +1,84 @@
+/* Reset CSS */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Dancing Script', cursive;
+  background-color: white; /* Background màu trắng */
+  overflow: hidden;
+}
+
+/* Nội dung thư */
+#letterContainer {
+  display: block; /* Hiển thị nội dung thư */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background: url('images/847074f8-cc46-4fb6-9f46-1714fa3dc48c.jpg') no-repeat center/cover;
+  z-index: 5;
+  overflow: hidden;
+}
+
+#letterContent {
+  position: absolute;
+  
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  font-size: 40px;
+  font-weight: bolder;
+  color: rgb(15, 13, 13);
+  white-space: pre-wrap;
+  line-height: 1.6;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* Mưa emoji tức giận và emoji phân */
+.heart {
+  position: fixed;
+  font-size: 30px; /* Kích thước emoji */
+  color: red; /* Màu đỏ cho emoji tức giận */
+  animation: fall 6s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes fall {
+  0% {
+      top: -50px;
+      opacity: 1;
+  }
+  100% {
+      top: 110vh;
+      opacity: 0;
+  }
+}
+
+/* Mưa emoji phân */
+.emoji {
+  position: fixed;
+  font-size: 30px; /* Kích thước emoji phân */
+  color: brown; /* Màu cho emoji phân */
+  animation: fall 6s linear infinite;
+  z-index: 9999;
+}
+
+@keyframes fall {
+  0% {
+      top: -50px;
+      opacity: 1;
+  }
+  100% {
+      top: 110vh;
+      opacity: 0;
+  }
+}
+
+/* Cập nhật mưa emoji tức giận */
+#heartBeat {
+  display: none; /* Xóa hiệu ứng trái tim đập */
+}
